@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="css/index.css">
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <span class="align-middle">
+                        <h1>UC Berkeley's Blockchain Community</h1>
+                        <p>We're a student-run organization at UC Berkeley dedicated to serving the Berkeley and greater East
+                            Bay crypto and blockchain communities.</p>
+                    </span>
+                </div>
+                <div class="col-sm-6 ">
+                    <img class="img-fluid" src="img/hero_illustration.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="post-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>We do a lot of blockchain things that serve the community and maybe you!</h2>
+                    <p>Longer text about all the different fun things we do</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Education</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Decals</a>
+                            <a href="#" class="btn btn-outline-secondary">Workshops</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Consulting</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Research & Development</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Join Our Mailing List</h2>
+                <p>For recruiting information, upcoming events, and ways to get involved.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>blah blah blah</p>
+            </div>
+            <div class="col-6">
+                <p>emails emails emails</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bundle.js"></script>
+{% endblock %}

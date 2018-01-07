@@ -1,0 +1,20 @@
+// Bootstrap overrides
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-border-radius: 4px;
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "node_modules/bootstrap/scss/grid"; // Columns
+@import "node_modules/bootstrap/scss/reboot"; // Based on Normalize
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/dropdown";
