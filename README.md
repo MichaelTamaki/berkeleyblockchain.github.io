@@ -12,7 +12,7 @@ npm install
 npm start
 ```
 
-## File Structure
+## File Structure of `src`
 
 The `html` folder holds `pages` and `templates`. `pages` holds all webpages that will eventually be served. `templates` holds HTML templates and partials that will be extended or used by the webpages in `pages`. Nunjucks parses this information and compiles it into HTML that the browser can read.
 
@@ -20,9 +20,9 @@ The `scss` folder holds `_base.scss`, which is the base scss file for the websit
 
 ## Workflow
 
-The files to edit are in the `src` folder. After running npm start, it will automatically compile the scss and html files into CSS/HTML and compile the appropriate Javascript files into a bundle. BrowserSync hot reloads your browser everytime you save a change to a scss or njk files.
+The files to edit are in the `src` folder. After running npm start, it will automatically compile the scss and html files into CSS/HTML and compile the appropriate Javascript files into a bundle. BrowserSync hot reloads your browser everytime you save a change to scss, njk or js files.
 
-Files are compiled into `docs`. This folder is compiled from the files in the `src` folder (besides `img`), but should be in our version control so that it can be served via Github Pages. Every file that is needed to deploy the site should be in this `docs`.
+Files are compiled into `docs`. This folder is compiled from the files in the `src` folder, but should be in our version control so that it can be served via Github Pages. Every file that is needed to deploy the site should be in `docs`.
 
 ## Resources
 [bs4starter](https://github.com/bradtraversy/bs4starter) - The boilerplate used.
