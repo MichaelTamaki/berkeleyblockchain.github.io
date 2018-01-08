@@ -10,6 +10,7 @@ const imagemin       = require('gulp-imagemin');
 // Compile html files using nunjucks
 gulp.task('nunjucks', function() {
     return gulp.src('src/html/pages/**/*.html')
+        .pipe(newer('docs'))
         .pipe(nunjucksRender({
             path: ['src/html/templates']
         }))
@@ -59,7 +60,7 @@ gulp.task('img', function() {
 });
 
 // Watch Sass/html/js & Serve
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass', 'nunjucks', 'js-core', 'img'], function() {
 
     browserSync.init({
         server: {
@@ -76,4 +77,4 @@ gulp.task('serve', ['sass'], function() {
 });
 
 // Called at npm start
-gulp.task('default', ['nunjucks', 'js-core', 'img', 'serve']);
+gulp.task('default', ['serve']);
