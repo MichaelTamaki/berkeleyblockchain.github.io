@@ -27,9 +27,16 @@ gulp.task('sass', function() {
 });
 
 // Bundle jquery, popper, and bootstrap. Move js files to docs
+// https://getbootstrap.com/docs/4.0/getting-started/javascript/
 gulp.task('js-core', ['js'], function() {
-    return gulp.src(['node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js'])
-        .pipe(newer('docs/js/bundle.js'))
+    return gulp.src([
+            'node_modules/jquery/dist/jquery.slim.min.js',
+            'node_modules/popper.js/dist/umd/popper.min.js',
+            'node_modules/bootstrap/js/dist/util.js',
+            'node_modules/bootstrap/js/dist/button.js', 
+            'node_modules/bootstrap/js/dist/collapse.js', 
+            'node_modules/bootstrap/js/dist/dropdown.js'
+        ])
         .pipe(concat('bundle.js'))
         .pipe(uglify())
         .pipe(gulp.dest('docs/js'))
@@ -69,4 +76,4 @@ gulp.task('serve', ['sass'], function() {
 });
 
 // Called at npm start
-gulp.task('default', ['nunjucks', 'js-core', 'serve', 'img']);
+gulp.task('default', ['nunjucks', 'js-core', 'img', 'serve']);
