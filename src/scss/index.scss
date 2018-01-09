@@ -54,3 +54,17 @@
 		}
 	}
 }
+
+#join {
+	overflow: hidden;
+	position: relative;
+	#pattern {
+		left: -15rem;
+		bottom: -15rem;
+		opacity: 0.9;
+		transform: rotate(100deg);
+	}
+	.col {
+		max-width: 540px;
+	}
+}
