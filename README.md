@@ -24,6 +24,12 @@ The files to edit are in the `src` folder. After running npm start, it will auto
 
 Files are compiled into `docs`. This folder is compiled from the files in the `src` folder, but should be in our version control so that it can be served via Github Pages. Every file that is needed to deploy the site should be in `docs`.
 
+## Deployment
+
+This is currently deployed on Github Pages. You'll notice that the CSS/img/JS src tags are weird because this is deployed as a project, rather than a user site. In actual deployment, these just have to start with a single /
+
+The `docs` folder should contain everything that is needed to deploy.
+
 ## Resources
 [bs4starter](https://github.com/bradtraversy/bs4starter) - The boilerplate used.
 
