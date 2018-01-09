@@ -27,3 +27,30 @@
 		border-radius: 8px;
 	}
 }
+
+#what {
+	overflow: hidden;
+	position: relative;
+	#nodes {
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(180deg, #F8F9FA, #fbdb4400), url(../img/Nodes.png);
+		background-repeat: repeat-x;
+		background-position: left bottom;
+		width: 100%;
+		height: 100%;
+	}
+	.card {
+		box-shadow: 0 12px 24px 0 rgba(0,0,0,0.06);
+		border-radius: 4px;
+		.push {
+			padding-top: $h4-font-size / 2;
+		}
+		a {
+			left: 50%;
+			bottom: 25px;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+		}
+	}
+}
