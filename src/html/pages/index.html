@@ -6,22 +6,22 @@
 {% endblock %}
 
 {% block content %}
-    <div class="jumbotron pt-0 mb-0" id="jumbo">
+    <div class="jumbotron-fluid bg-white pb-5 mb-0" id="jumbo">
         <img class="position-absolute" id="cube" src="img/cube.png">
         <img class="position-absolute d-none d-lg-block d-xl-block" id="pattern" src="img/pattern@7x.png">
         <nav class="navbar navbar-expand-lg navbar-light">
             {% include "partials/navigation.html" %}
         </nav>
-        <div class="container pt-3">
-            <div class="row mt-3 mb-3">
+        <div class="container pt-3 mb-5">
+            <div class="row mt-3">
                 <div class="col-lg d-flex align-items-center">
                     <div>
                         <h1 class="mb-4">UC Berkeley's Blockchain Community</h1>
                         <div class="w-75">
                             <p class="lead">We're a non-profit organization at UC Berkeley building people through blockchain events, education, research, and enterprise projects.</p>
                         </div>
-                        <button class="btn btn-primary mr-2">Join Our Slack</button>
-                        <button class="btn btn-light">Contact Us</button>
+                        <a class="btn btn-primary mr-2" href="#" role="button">Join Our Slack</a>
+                        <a class="btn btn-light" href="#" role="button">Contact Us</a>
                     </div>
                 </div>
                 <div class="col-lg d-flex align-items-center">
@@ -30,47 +30,62 @@
             </div>
         </div>
     </div>
-    <section id="post-hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2>We do a lot of blockchain things that serve the community and maybe you!</h2>
-                    <p>Longer text about all the different fun things we do</p>
-                    <hr>
+
+    <div class="container bg-white p-5 position-relative" id="who">
+        <div class="row">
+            <div class="col-lg d-flex align-items-center">
+                <div>
+                    <h1>Who Are We?</h1>
+                    <p>We're a student-run organization at UC Berkeley dedicated to serving the Berkeley and greater East Bay crypto and blockchain communities. Our members include Berkeley students, alumni, community members, and blockchain enthusiasts from all educational and industrial backgrounds.</p>
+                    <p>Our team consists of undergraduates from a variety of backgrounds: Electrical Engineering and Computer Science, Economics, Business, and more.</p>
+                    <a class="btn btn-primary" href="#" role="button">Learn More</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Education</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Decals</a>
-                            <a href="#" class="btn btn-outline-secondary">Workshops</a>
-                        </div>
+            <div class="col-lg d-flex align-items-center">
+                <img class="img-fluid" src="img/hero_illustration.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2>We do a lot of blockchain things that serve the community and maybe you!</h2>
+                <p>Longer text about all the different fun things we do</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Education</h4>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Decals</a>
+                        <a href="#" class="btn btn-outline-secondary">Workshops</a>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Consulting</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Consulting</h4>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Research & Development</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Research & Development</h4>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="container">
         <div class="row">
