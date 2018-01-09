@@ -29,3 +29,31 @@ $lead-font-size: 1.15rem;
 p {
 	opacity: 0.8;
 }
+
+#footer {
+	overflow: hidden;
+	position: relative;
+	#nodes {
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(180deg, #f8f9fa82, #fbdb4400), url(/img/Nodes.png);
+		background-repeat: repeat-x;
+		background-position: left bottom;
+		width: 100%;
+		height: 100%;
+	}
+	#icons a {
+		&:hover {
+			text-decoration: none;
+			path {
+				fill: darken($body-color, 50%);
+			}
+		}
+		path {
+			fill: $body-color;
+		}
+	}
+	#links a {
+		color: $body-color;
+	}
+}

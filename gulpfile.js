@@ -10,7 +10,6 @@ const imagemin       = require('gulp-imagemin');
 // Compile html files using nunjucks
 gulp.task('nunjucks', function() {
     return gulp.src('src/html/pages/**/*.html')
-        .pipe(newer('docs'))
         .pipe(nunjucksRender({
             path: ['src/html/templates']
         }))
@@ -21,7 +20,6 @@ gulp.task('nunjucks', function() {
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
     return gulp.src(['src/scss/**/*.scss'])
-        .pipe(newer('docs/css'))
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('docs/css'))
         .pipe(browserSync.stream());

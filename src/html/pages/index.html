@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Blockchain at Berkeley</title>
 {% endblock %}
 
 {% block content %}
     <div class="jumbotron-fluid bg-white pb-5 mb-0" id="jumbo">
-        <img class="position-absolute" id="cube" src="img/cube.png">
-        <img class="position-absolute d-none d-lg-block d-xl-block" id="pattern" src="img/pattern@7x.png">
+        <img class="position-absolute" id="cube" src="/img/cube.png">
+        <img class="position-absolute d-none d-lg-block d-xl-block" id="pattern" src="/img/pattern@7x.png">
         <nav class="navbar navbar-expand-lg navbar-light">
             {% include "partials/navigation.html" %}
         </nav>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="col-lg d-flex align-items-center">
-                    <img class="img-fluid" src="img/hero_illustration.png">
+                    <img class="img-fluid" src="/img/hero_illustration.png">
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="col-lg d-flex align-items-center">
-                <img class="img-fluid" src="img/hero_illustration.png">
+                <img class="img-fluid" src="/img/hero_illustration.png">
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
     </div>
 
     <div class="container-fluid bg-white pt-5 pb-5" id="join">
-        <img class="position-absolute" id="pattern" src="img/pattern@7x.png">
+        <img class="position-absolute" id="pattern" src="/img/pattern@7x.png">
         <div class="container">
             <div class="row">
                 <div class="col text-center mx-auto d-block">
@@ -139,6 +139,6 @@
 {% endblock %}
 
 {% block js %}
-    <script src="js/bundle.js"></script>
-    <script src="js/index.js"></script>
+    <script src="/js/bundle.js"></script>
+    <script src="/js/index.js"></script>
 {% endblock %}
