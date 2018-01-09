@@ -1,7 +1,21 @@
+$jumbotron-bg: white;
+
 // Import base style
 @import "base";
 
 // Optional Bootstrap components
 @import "node_modules/bootstrap/scss/card";
 @import "node_modules/bootstrap/scss/forms";
-@import "node_modules/bootstrap/scss/jumbotron";
+
+#jumbo {
+	overflow: hidden;
+	position: relative;
+	#cube {
+		left: -5rem;
+		bottom: -5rem;
+	}
+	#pattern {
+		right: -5rem;
+		bottom: -5rem;
+	}
+}

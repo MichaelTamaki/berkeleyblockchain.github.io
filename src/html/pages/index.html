@@ -6,17 +6,25 @@
 {% endblock %}
 
 {% block content %}
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <span class="align-middle">
-                        <h1>UC Berkeley's Blockchain Community</h1>
-                        <p>We're a student-run organization at UC Berkeley dedicated to serving the Berkeley and greater East
-                            Bay crypto and blockchain communities.</p>
-                    </span>
+    <div class="jumbotron pt-0 mb-0" id="jumbo">
+        <img class="position-absolute" id="cube" src="img/cube.png">
+        <img class="position-absolute d-none d-lg-block d-xl-block" id="pattern" src="img/pattern@7x.png">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            {% include "partials/navigation.html" %}
+        </nav>
+        <div class="container pt-3">
+            <div class="row mt-3 mb-3">
+                <div class="col-lg d-flex align-items-center">
+                    <div>
+                        <h1 class="mb-4">UC Berkeley's Blockchain Community</h1>
+                        <div class="w-75">
+                            <p class="lead">We're a non-profit organization at UC Berkeley building people through blockchain events, education, research, and enterprise projects.</p>
+                        </div>
+                        <button class="btn btn-primary mr-2">Join Our Slack</button>
+                        <button class="btn btn-light">Contact Us</button>
+                    </div>
                 </div>
-                <div class="col-sm-6 ">
+                <div class="col-lg d-flex align-items-center">
                     <img class="img-fluid" src="img/hero_illustration.png">
                 </div>
             </div>

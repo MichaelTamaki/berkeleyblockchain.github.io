@@ -6,9 +6,19 @@
 {% endblock %}
 
 {% block content %}
-	<div class="container text-center">
-	    <h1 class="custom">Team Page</h1>
-	    <p>Wow, a page that is served on the URL "/team"!</p>
+    <div class="jumbotron pt-0" id="jumbo">
+        <div class="position-absolute" id="nodes"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            {% include "partials/navigation.html" %}
+        </nav>
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col text-center">
+                	<h1 style="color:#FFFFFF;">Example Non Home Page</h1>
+                	<p style="color:#FFFFFF;">This is our amazing team of wonderful people!</p>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
 
