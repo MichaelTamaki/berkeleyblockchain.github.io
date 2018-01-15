@@ -22,13 +22,7 @@ The `scss` folder holds `_base.scss`, which is the base scss file for the websit
 
 The files to edit are in the `src` folder. After running npm start, it will automatically compile the scss and html files into CSS/HTML and compile the appropriate Javascript files into a bundle. BrowserSync hot reloads your browser everytime you save a change to scss, njk or js files.
 
-Files are compiled into `docs`. This folder is compiled from the files in the `src` folder, but should be in our version control so that it can be served via Github Pages. Every file that is needed to deploy the site should be in `docs`.
-
-## Deployment
-
-This is currently deployed on Github Pages. You'll notice that the CSS/img/JS src tags are weird because this is deployed as a project, rather than a user site. In actual deployment, these just have to start with a single /
-
-The `docs` folder should contain everything that is needed to deploy.
+The files from the `src` folder are compiled into the root folder, such that it can be deployed via Github Pages.
 
 ## Resources
 [bs4starter](https://github.com/bradtraversy/bs4starter) - The boilerplate used.
@@ -36,3 +30,5 @@ The `docs` folder should contain everything that is needed to deploy.
 [Bootstrap 4 Theming](https://getbootstrap.com/docs/4.0/getting-started/theming/) - How to override Bootstrap variables/classes using Sass.
 
 [Nunjucks + Gulp tutorial](https://bonfacemunyoki.com/post/2017-07-23-modularizing-html/) - Nunjucks is the njk files that we use to modularize HTML elements. This way, we do not have to rewrite the navbar/footer for every page.
+
+[IBM Plex Sans](https://github.com/IBM/type) - The font used

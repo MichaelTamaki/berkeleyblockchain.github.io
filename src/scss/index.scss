@@ -34,7 +34,8 @@
 	#nodes {
 		bottom: 0;
 		left: 0;
-		background-image: linear-gradient(180deg, #F8F9FA, #fbdb4400), url(../img/Nodes.png);
+		background-image: linear-gradient(0deg, $body-bg-grad, $body-bg), url(/img/Nodes.png);
+		background-image: -webkit-linear-gradient(90deg, $body-bg-grad, $body-bg), url(/img/Nodes.png);
 		background-repeat: repeat-x;
 		background-position: left bottom;
 		width: 100%;
@@ -62,6 +63,7 @@
 		left: -15rem;
 		bottom: -15rem;
 		opacity: 0.9;
+		-webkit-transform: rotate(100deg);
 		transform: rotate(100deg);
 	}
 	.col {

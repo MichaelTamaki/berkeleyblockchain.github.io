@@ -1,11 +1,15 @@
+// Font import
+$font-prefix: "";
+@import "node_modules/@ibm/type/scss/sans/index";
+
 // Bootstrap overrides
 $btn-border-radius: 4px;
 $body-bg: #F8F9FA;
+$body-bg-grad: #F8F9FA00;
 $body-color: #757575;
 $h1-font-size: 48px;
 $headings-color: #424242;
-$font-family-base: PTSerif-Regular;
-$headings-font-family: PTSerif-Bold;
+$font-family-base: IBM Plex Sans;
 $lead-font-size: 1.15rem;
 
 // Required
@@ -36,7 +40,7 @@ p {
 	#nodes {
 		bottom: 0;
 		left: 0;
-		background-image: linear-gradient(180deg, #f8f9fa82, #fbdb4400), url(/img/Nodes.png);
+		background-image: url(/img/Nodes.png);
 		background-repeat: repeat-x;
 		background-position: left bottom;
 		width: 100%;

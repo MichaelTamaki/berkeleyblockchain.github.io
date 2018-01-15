@@ -9,6 +9,7 @@
   "author": "Blockchain at Berkeley",
   "license": "MIT",
   "dependencies": {
+    "@ibm/type": "^0.5.3",
     "bootstrap": "^4.0.0-beta.3",
     "jquery": "^3.2.1",
     "popper.js": "^1.11.1"

@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Blockchain at Berkeley</title>
 {% endblock %}
 
 {% block content %}
     <div class="jumbotron-fluid bg-white pb-5 mb-0" id="jumbo">
-        <img class="position-absolute" id="cube" src="img/cube.png">
-        <img class="position-absolute d-none d-lg-block d-xl-block" id="pattern" src="img/pattern@7x.png">
+        <img class="position-absolute" id="cube" src="/img/cube.png">
+        <img class="position-absolute d-none d-lg-block d-xl-block" id="pattern" src="/img/pattern@7x.png">
         <nav class="navbar navbar-expand-lg navbar-light">
             {% include "partials/navigation.html" %}
         </nav>
@@ -25,13 +25,13 @@
                     </div>
                 </div>
                 <div class="col-lg d-flex align-items-center">
-                    <img class="img-fluid" src="img/hero_illustration.png">
+                    <img class="img-fluid" src="/img/hero_illustration.png">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container bg-white p-5 position-relative" id="who">
+    <div class="container bg-white p-5 mb-4 position-relative" id="who">
         <div class="row">
             <div class="col-lg d-flex align-items-center">
                 <div>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="col-lg d-flex align-items-center">
-                <img class="img-fluid" src="img/hero_illustration.png">
+                <img class="img-fluid" src="/img/hero_illustration.png">
             </div>
         </div>
     </div>
@@ -114,16 +114,17 @@
     </div>
 
     <div class="container-fluid bg-white pt-5 pb-5" id="contact">
-        <div class="container">
+        <div class="container pt-4 pb-4">
             <div class="row">
                 <div class="col">
                     <h1>Contact Us</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5 pr-0">
                     <p>For more efficient responses by our staff, please adopt this subject line format: “[Department you are contacting]: [Message topic] - [your full name]”. We aim to get back to you within 2-3 business days. For informal inquiries or discussions, Slack may be more responsive. Request to join us on Slack (<a href="https://berkeleyblockchain.slack.com/">https://berkeleyblockchain.slack.com/</a>) by <a href="#">filling out this form</a>.</p>
                 </div>
+                <div class="col-md-1"></div>
                 <div class="col-md-6">
                     <ul class="list-unstyled">
                         <li><b>Consulting</b>: consulting@blockchain.berkeley.edu</li>
@@ -139,6 +140,6 @@
 {% endblock %}
 
 {% block js %}
-    <script src="js/bundle.js"></script>
-    <script src="js/index.js"></script>
+    <script src="/js/bundle.js"></script>
+    <script src="/js/index.js"></script>
 {% endblock %}

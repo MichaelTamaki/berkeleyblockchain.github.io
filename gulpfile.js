@@ -7,13 +7,20 @@ const nunjucksRender = require('gulp-nunjucks-render');
 const newer          = require('gulp-newer');
 const imagemin       = require('gulp-imagemin');
 
+// Fonts
+gulp.task('fonts', function() {
+    return gulp.src(['node_modules/@ibm/type/fonts/sans/web/**'])
+        .pipe(newer('fonts/Sans/web'))
+        .pipe(gulp.dest('fonts/Sans/web'));
+});
+
 // Compile html files using nunjucks
 gulp.task('nunjucks', function() {
     return gulp.src('src/html/pages/**/*.html')
         .pipe(nunjucksRender({
             path: ['src/html/templates']
         }))
-        .pipe(gulp.dest('docs/'))
+        .pipe(gulp.dest(''))
         .pipe(browserSync.stream());
 });
 
@@ -21,7 +28,7 @@ gulp.task('nunjucks', function() {
 gulp.task('sass', function() {
     return gulp.src(['src/scss/**/*.scss'])
         .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(gulp.dest('docs/css'))
+        .pipe(gulp.dest('css'))
         .pipe(browserSync.stream());
 });
 
@@ -38,31 +45,31 @@ gulp.task('js-core', ['js'], function() {
         ])
         .pipe(concat('bundle.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('docs/js'))
+        .pipe(gulp.dest('js'))
         .pipe(browserSync.stream());
 });
 gulp.task('js', function() {
     return gulp.src(['src/js/**/*.js'])
-        .pipe(newer('docs/js'))
+        .pipe(newer('js'))
         .pipe(uglify())
-        .pipe(gulp.dest('docs/js'))
+        .pipe(gulp.dest('js'))
         .pipe(browserSync.stream());
 });
 
 // Minify images
 gulp.task('img', function() {
     return gulp.src(['src/img/**'])
-        .pipe(newer('docs/img'))
+        .pipe(newer('img'))
         .pipe(imagemin())
-        .pipe(gulp.dest('docs/img'))
+        .pipe(gulp.dest('img'))
 });
 
 // Watch Sass/html/js & Serve
-gulp.task('serve', ['sass', 'nunjucks', 'js-core', 'img'], function() {
+gulp.task('serve', ['sass', 'nunjucks', 'js-core', 'img', 'fonts'], function() {
 
     browserSync.init({
         server: {
-            baseDir: './docs',
+            baseDir: './',
             serveStaticOptions: {
                 extensions: ['html']
             }
