@@ -1,44 +1,24 @@
-{% extends "base.html" %}
-
-{% block head %}
-    <link rel="stylesheet" href="/css/index.css">
-    <title>Blockchain at Berkeley</title>
-{% endblock %}
-
-{% block content %}
-    <div class="jumbotron-fluid bg-white pb-5 mb-0" id="jumbo">
-        <img class="position-absolute" id="cube" src="/img/cube.png">
-        <img class="position-absolute d-none d-lg-block d-xl-block" id="pattern" src="/img/pattern@7x.png">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            {% include "partials/navigation.html" %}
-        </nav>
-        <div class="container pt-3 mb-5">
-            <div class="row mt-3">
-                <div class="col-lg d-flex align-items-center">
-                    <div>
-                        <h1 class="mb-4">UC Berkeley's Blockchain Community</h1>
-                        <div class="w-75">
-                            <p class="lead">We're a non-profit organization at UC Berkeley building people through blockchain events, education, research, and enterprise projects.</p>
-                        </div>
-                        <a class="btn btn-primary mr-2" href="#" role="button">Join Our Slack</a>
-                        <a class="btn btn-light" href="#" role="button">Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg d-flex align-items-center">
-                    <img class="img-fluid" src="/img/hero_illustration.png">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container bg-white p-5 mb-4 position-relative" id="who">
-        <div class="row">
+{% extends "base.html" %} {% block head %}
+<link rel="stylesheet" href="/css/index.css">
+<title>Blockchain at Berkeley</title>
+{% endblock %} {% block content %}
+<div class="jumbotron-fluid bg-white pb-5 mb-0" id="jumbo">
+    <img class="position-absolute" id="cube" src="/img/cube.png">
+    <img class="position-absolute d-none d-lg-block d-xl-block" id="pattern" src="/img/pattern@7x.png">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        {% include "partials/navigation.html" %}
+    </nav>
+    <div class="container pt-3 mb-5">
+        <div class="row mt-3">
             <div class="col-lg d-flex align-items-center">
                 <div>
-                    <h1>Who Are We?</h1>
-                    <p>We're a student-run organization at UC Berkeley dedicated to serving the Berkeley and greater East Bay crypto and blockchain communities. Our members include Berkeley students, alumni, community members, and blockchain enthusiasts from all educational and industrial backgrounds.</p>
-                    <p>Our team consists of undergraduates from a variety of backgrounds: Electrical Engineering and Computer Science, Economics, Business, and more.</p>
-                    <a class="btn btn-primary" href="#" role="button">Learn More</a>
+                    <h1 class="mb-4">UC Berkeley's Blockchain Community</h1>
+                    <div class="w-75">
+                        <p class="lead">We're a non-profit organization at UC Berkeley building people through blockchain events, education,
+                            research, and enterprise projects.</p>
+                    </div>
+                    <a class="btn btn-primary mr-2" href="#" role="button">Join Our Slack</a>
+                    <a class="btn btn-light" href="#" role="button">Contact Us</a>
                 </div>
             </div>
             <div class="col-lg d-flex align-items-center">
@@ -46,100 +26,131 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container-fluid pb-5" id="what">
-        <div class="position-absolute" id="nodes"></div>
-        <div class="container">
-            <div class="row pt-5 pb-4">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8 text-center">
-                    <h1>What Do We Do?</h1>
-                    <p>We host a range of events and programs to promote blockchain in Berkeley and beyond, largely centered around education, consulting, and research and development.</p>
-                </div>
+<div class="container bg-white p-5 mb-4 position-relative" id="who">
+    <div class="row">
+        <div class="col-lg d-flex align-items-center">
+            <div>
+                <h1>Who Are We?</h1>
+                <p>We're a student-run organization at UC Berkeley dedicated to serving the Berkeley and greater East Bay crypto
+                    and blockchain communities. Our members include Berkeley students, alumni, community members, and blockchain
+                    enthusiasts from all educational and industrial backgrounds.</p>
+                <p>Our team consists of undergraduates from a variety of backgrounds: Electrical Engineering and Computer Science,
+                    Economics, Business, and more.</p>
+                <a class="btn btn-primary" href="#" role="button">Learn More</a>
             </div>
-            <div class="row pb-3">
-                <div class="card-deck">
-                    <div class="card pb-5">
-                        <div class="card-body">
-                            <img class="mx-auto d-block mb-1" src="http://via.placeholder.com/70x70">
-                            <h3 class="card-title text-center push">Education</h3>
-                            <p class="card-text">We teach two open-source undergraduate cryptocurrency courses, organize the largest crypto meetup in the East Bay, and host tech talks, workshops, and more.</p>
-                            <a class="btn btn-primary position-absolute" href="#" role="button">Learn More</a>
-                        </div>
+        </div>
+        <div class="col-lg d-flex align-items-center">
+            <img class="img-fluid" src="/img/hero_illustration.png">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pb-5" id="what">
+    <div class="position-absolute" id="nodes"></div>
+    <div class="container">
+        <div class="row pt-5 pb-4">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 text-center">
+                <h1>What Do We Do?</h1>
+                <p>We host a range of events and programs to promote blockchain in Berkeley and beyond, largely centered around
+                    education, consulting, and research and development.</p>
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="card-deck">
+                <div class="card pb-5">
+                    <div class="card-body">
+                        <img class="mx-auto d-block mb-1" src="img/Education.png" width="140px">
+                        <h3 class="card-title text-center push">Education</h3>
+                        <p class="card-text">We teach two open-source undergraduate cryptocurrency courses, organize the largest crypto meetup
+                            in the East Bay, and host tech talks, workshops, and more.</p>
+                        <a class="btn btn-primary position-absolute" href="#" role="button">Learn More</a>
                     </div>
-                    <div class="card pb-5">
-                        <div class="card-body">
-                            <img class="mx-auto d-block mb-1" src="http://via.placeholder.com/70x70">
-                            <h3 class="card-title text-center push">Consulting</h3>
-                            <p class="card-text">We work with companies to explore how they can apply blockchain to their business, build Proof of Concepts or prototypes, and translate new developments into real-world use cases.</p>
-                            <a class="btn btn-primary position-absolute" href="#" role="button">Learn More</a>
-                        </div>
+                </div>
+                <div class="card pb-5">
+                    <div class="card-body">
+                        <img class="mx-auto d-block mb-1" src="img/Consulting.png" width="140px">
+                        <h3 class="card-title text-center push">Consulting</h3>
+                        <p class="card-text">We work with companies to explore how they can apply blockchain to their business, build Proof of
+                            Concepts or prototypes, and translate new developments into real-world use cases.</p>
+                        <a class="btn btn-primary position-absolute" href="#" role="button">Learn More</a>
                     </div>
-                    <div class="card pb-5">
-                        <div class="card-body">
-                            <img class="mx-auto d-block mb-1" src="http://via.placeholder.com/70x70">
-                            <h3 class="card-title text-center">Research &<br>Development</h3>
-                            <p class="card-text">We build side projects and do research with cutting-edge blockchain and crypto technologies. These projects have won first prizes at collegiate hackathons. All of our work is open-sourced.</p>
-                            <a class="btn btn-primary position-absolute" href="#" role="button">Learn More</a>
-                        </div>
+                </div>
+                <div class="card pb-5">
+                    <div class="card-body">
+                        <img class="mx-auto d-block mb-1" src="img/RD.png" width="140px">
+                        <h3 class="card-title text-center">Research &
+                            <br>Development</h3>
+                        <p class="card-text">We build side projects and do research with cutting-edge blockchain and crypto technologies. These
+                            projects have won first prizes at collegiate hackathons. All of our work is open-sourced.</p>
+                        <a class="btn btn-primary position-absolute" href="#" role="button">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container-fluid bg-white pt-5 pb-5" id="join">
-        <img class="position-absolute" id="pattern" src="img/pattern@7x.png">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center mx-auto d-block">
-                    <img class="mx-auto d-block mb-4" src="http://via.placeholder.com/70x70">
-                    <h1>Join Our Mailing List</h1>
-                    <p class="lead px-4">For recruiting information, upcoming events, and ways to get involved.</p>
-                    <form class="mx-2 px-5">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Email Address">
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
-                    </form>
-                </div>
+<div class="container-fluid bg-white pt-5 pb-5" id="join">
+    <img class="position-absolute" id="pattern" src="img/pattern@7x.png">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mx-auto d-block">
+                <img class="mx-auto d-block mb-4" src="http://via.placeholder.com/70x70">
+                <h1>Join Our Mailing List</h1>
+                <p class="lead px-4">For recruiting information, upcoming events, and ways to get involved.</p>
+                <form class="mx-2 px-5">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container-fluid bg-white pt-5 pb-5" id="contact">
-        <div class="container pt-4 pb-4">
-            <div class="row">
-                <div class="col">
-                    <h1>Contact Us</h1>
-                </div>
+<div class="container-fluid bg-white pt-5 pb-5" id="contact">
+    <div class="container pt-4 pb-4">
+        <div class="row">
+            <div class="col">
+                <h1>Contact Us</h1>
             </div>
-            <div class="row">
-                <div class="col-md-5 pr-0">
-                    <p>For more efficient responses by our staff, please adopt this subject line format: “[Department you are contacting]: [Message topic] - [your full name]”. We aim to get back to you within 2-3 business days. For informal inquiries or discussions, Slack may be more responsive. Request to join us on Slack (<a href="https://berkeleyblockchain.slack.com/">https://berkeleyblockchain.slack.com/</a>) by <a href="#">filling out this form</a>.</p>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li><b>Consulting</b>: consulting@blockchain.berkeley.edu</li>
-                        <li><b>Educations</b>: education@blockchain.berkeley.edu</li>
-                        <li><b>R&D</b>: innovation@blockchain.berkeley.edu</li>
-                        <li><b>Sponsorship</b>: sponsorship@blockchain.berkeley.edu</li>
-                        <li><b>Recruitment</b>: recruitment@blockchain.berkeley.edu</li>
-                    </ul>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 pr-0">
+                <p>For more efficient responses by our staff, please adopt this subject line format: “[Department you are contacting]:
+                    [Message topic] - [your full name]”. We aim to get back to you within 2-3 business days. For informal
+                    inquiries or discussions, Slack may be more responsive. Request to join us on Slack (
+                    <a href="https://berkeleyblockchain.slack.com/">https://berkeleyblockchain.slack.com/</a>) by
+                    <a href="#">filling out this form</a>.</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <b>Consulting</b>: consulting@blockchain.berkeley.edu</li>
+                    <li>
+                        <b>Educations</b>: education@blockchain.berkeley.edu</li>
+                    <li>
+                        <b>R&D</b>: innovation@blockchain.berkeley.edu</li>
+                    <li>
+                        <b>Sponsorship</b>: sponsorship@blockchain.berkeley.edu</li>
+                    <li>
+                        <b>Recruitment</b>: recruitment@blockchain.berkeley.edu</li>
+                </ul>
             </div>
         </div>
     </div>
-{% endblock %}
-
-{% block js %}
-    <script src="/js/bundle.js"></script>
-    <script src="/js/index.js"></script>
-{% endblock %}
+</div>
+{% endblock %} {% block js %}
+<script src="/js/bundle.js"></script>
+<script src="/js/index.js"></script> {% endblock %}
