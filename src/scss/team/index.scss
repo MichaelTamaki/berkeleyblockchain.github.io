@@ -4,16 +4,14 @@
 #jumbo {
 	overflow: hidden;
 	position: relative;
-	background-image: linear-gradient(180deg, #E9A436, #FBDB44);
-	background-image: -webkit-linear-gradient(270deg, #E9A436, #FBDB44);
+	background-image: linear-gradient(to bottom, #E9A436, #FBDB44);
 	#nodes {
-		bottom: -2rem;
+		bottom: 0;
 		left: 0;
-		background-image: linear-gradient(180deg, #E9A436, #f6cc3f 70%, #fbdb4400), url(/img/Nodes.png);
-		background-image: -webkit-linear-gradient(270deg, #E9A436, #f6cc3f 70%, #fbdb4400), url(/img/Nodes.png);
+		background-image: linear-gradient(to bottom, #E9A436, #FBDB4400), url(/img/Nodes.png);
 		background-repeat: repeat-x;
 		background-position: left bottom;
 		width: 100%;
-		height: 200%;
+		height: 100%;
 	}
 }

@@ -6,6 +6,7 @@ const uglify         = require('gulp-uglify');
 const nunjucksRender = require('gulp-nunjucks-render');
 const newer          = require('gulp-newer');
 const imagemin       = require('gulp-imagemin');
+const htmlmin        = require('gulp-htmlmin');
 
 // Fonts
 gulp.task('fonts', function() {
@@ -20,6 +21,7 @@ gulp.task('nunjucks', function() {
         .pipe(nunjucksRender({
             path: ['src/html/templates']
         }))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(''))
         .pipe(browserSync.stream());
 });

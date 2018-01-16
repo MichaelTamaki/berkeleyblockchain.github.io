@@ -34,8 +34,7 @@
 	#nodes {
 		bottom: 0;
 		left: 0;
-		background-image: linear-gradient(0deg, $body-bg-grad, $body-bg), url(/img/Nodes.png);
-		background-image: -webkit-linear-gradient(90deg, $body-bg-grad, $body-bg), url(/img/Nodes.png);
+		background-image: linear-gradient(to top, $body-bg-grad, $body-bg), url(/img/Nodes.png);
 		background-repeat: repeat-x;
 		background-position: left bottom;
 		width: 100%;
