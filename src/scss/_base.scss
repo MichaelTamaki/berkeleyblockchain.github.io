@@ -40,6 +40,13 @@ p {
 	opacity: 0.8;
 }
 
+//Mobile Overrides
+@media only screen and (max-width: 960px) {
+	#intro-picture {
+		margin-top: 40px;
+	}
+}
+
 #footer {
 	overflow: hidden;
 	position: relative;
@@ -66,6 +73,10 @@ p {
 	#links a {
 		color: $body-color;
 	}
+}
+
+.btn {
+	border: none;
 }
 
 @mixin button-grad-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%)) {
