@@ -30,6 +30,12 @@ $lead-font-size: 1.15rem;
 @import "node_modules/bootstrap/scss/transitions";
 @import "node_modules/bootstrap/scss/jumbotron";
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: "PT Serif", sans-serif !important;
+	font-weight: 600;
+	color: #424242;
+}
+
 p {
 	opacity: 0.8;
 }
